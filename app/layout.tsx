@@ -22,9 +22,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="es" className="dark" suppressHydrationWarning>
       <head>
@@ -42,5 +42,5 @@ export default function RootLayout({
         <BottomNavigation />
       </body>
     </html>
-  );
+  )
 }
